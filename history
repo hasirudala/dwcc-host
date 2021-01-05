@@ -1,0 +1,137 @@
+    1  ls
+    2  exit
+    3  sudo journalctl -f -u dwcc-server
+    4  ls
+    5  ls -a
+    6  ls -l
+    7  chmod 755 setup-server.sh
+    8  vi setup-server.sh
+    9  sudo ./setup-server.sh
+   10  ls /etc/systemd/system
+   11  ls -l /etc/systemd/system
+   12  ls ..
+   13  ls ../app/
+   14  ls ../app/dwcc-live/
+   15  ls ../app/dwcc-live/server/
+   16  ping http://199.79.62.144:2082/
+   17  ping 199.79.62.144:2082
+   18  ping 199.79.62.144
+   19  sudo ufw status
+   20  python -m http.server 80
+   21  python3 -m http.server 80
+   22  sudo python3 -m http.server 80
+   23  echo $PATH
+   24  which python
+   25  which python3
+   26  man ln
+   27  sudo ln -s /usr/bin/python3 /usr/local/bin/python
+   28  which python
+   29  sudo apt install certbot
+   30  sudo apt autoremove
+   31  certbot --help
+   32  certbot -h all
+   33  sudo certbot certonly --standalone --preferred-challenges http -d dwcc.hasirudala.in
+   34  DOMAIN_NAME=dwcc.hasirudala.in
+   35  echo $DOMAIN_NAME
+   36  APP_ROOT=/home/app/dwcc-live/
+   37  APP_ROOT=/home/app/dwcc-live
+   38  cd /etc/letsencrypt/live/${DOMAIN_NAME}
+   39  sudo cd /etc/letsencrypt/live/${DOMAIN_NAME}
+   40  sudo su
+   41  cd ../app/
+   42  ls
+   43  ls -l
+   44  cd dwcc-live/
+   45  ls
+   46  ls -l
+   47  cd server/
+   48  ls -l
+   49  vi env.local.template
+   50  mv ~/server.prod.env .env.local
+   51  sudo mv ~/server.prod.env .env.local
+   52  ls -al
+   53  chown app: .env.local
+   54  sudo chown app: .env.local
+   55  ls -l
+   56  vi .env.local
+   57  ls -al
+   58  vi .env.local
+   59  sudo -u app vi .env.local
+   60  ls -a ../..
+   61  mkdir ../../.ssh
+   62  sudo -u app mkdir ../../.ssh
+   63  cat ~/buddy.pub
+   64  cat ~/buddy.pub >  ../../.ssh/authorized_keys
+   65  cd ../..
+   66  mv ~/buddy.pub .
+   67  sudo mv ~/buddy.pub .
+   68  sudo chown app: buddy.pub
+   69  ls -l
+   70  ls -al
+   71  mv buddy.pub .ssh/authorized_keys
+   72  sudo -u app mv buddy.pub .ssh/authorized_keys
+   73  vi .ssh/authorized_keys
+   74  ls -l .ssh/
+   75  sudo -u app chmod g+w .ssh/authorized_keys
+   76  ls -l .ssh/
+   77  ls
+   78  cd dwcc-live/
+   79  ls -l
+   80  cd server/
+   81  ls -l
+   82  ls -al
+   83  ls -al new/
+   84  ls -a
+   85  ls -al
+   86  vi .env.local
+   87  ls -al new/
+   88  ls -alh new/
+   89  ls -lh
+   90  ls -alh new/
+   91  sudo su app
+   92  c
+   93  cd
+   94  apt-cache search psql
+   95  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+   96  RELEASE=$(lsb_release -cs)
+   97  echo "deb http://apt.postgresql.org/pub/repos/apt/ ${RELEASE}"-pgdg main | sudo tee  /etc/apt/sources.list.d/pgdg.list
+   98  sudo apt update
+   99  sudo apt autoremove
+  100  sudo apt-get autoremove
+  101  sudo apt install postgresql-client-11
+  102  psql -h dwcc.c5sgkvb6of9i.ap-south-1.rds.amazonaws.com -d dwcc -U dwcc
+  103  sudo systemctl restart dwcc-server
+  104  sudo su app
+  105  vi .pgpass
+  106  psql -h dwcc.c5sgkvb6of9i.ap-south-1.rds.amazonaws.com -d dwcc -U dwcc < metadata_backup_apr2.sql
+  107  chmod 600 .pgpass
+  108  psql -h dwcc.c5sgkvb6of9i.ap-south-1.rds.amazonaws.com -d dwcc -U dwcc < metadata_backup_apr2.sql
+  109  psql -h dwcc.c5sgkvb6of9i.ap-south-1.rds.amazonaws.com -d dwcc -U dwcc
+  110  ls
+  111  rm dwcc-server.service env.local.template setup-letsencrypt.sh setup-server.sh
+  112  ls
+  113  history | grep psql
+  114  vi /etc/cron.d/certbot
+  115  sudo journalctl -f -u dwcc-server
+  116  sudo journalctl  -u dwcc-server
+  117  sudo systemctl restart dwcc-server
+  118  sudo journalctl -f -u dwcc-server
+  119  sudo su
+  120  history | grep pcap
+  121  sudo su
+  122  sudo systemctl restart dwcc-server
+  123  sudo journalctl -f -u dwcc-server
+  124  history
+  125  ps -ef | grep java
+  126  ls /var/log/dwcc/
+  127  ls -lt /var/log/dwcc/
+  128  tail -f /var/log/dwcc/dwcc.log.0
+  129  tail -f /var/log/dwcc/dwcc.log*
+  130  ls
+  131  cd /var/log/
+  132  ls
+  133  cd dwcc/
+  134  ls
+  135  ls -lt
+  136  vi dwcc.log.0
+  137  history
