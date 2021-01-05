@@ -24,6 +24,7 @@ chown app: ${APP_ROOT}/server/keystore.p12
 chmod 664 ${APP_ROOT}/server/keystore.p12
 
 # setup renewal hooks
+ls -lt
 sed -e "s;%DOMAIN_NAME%;${DOMAIN_NAME};g" -e "s;%KEYSTORE_PASS%;${KEYSTORE_PASS};g" \
 -e "s;%APP_ROOT%;${APP_ROOT};g" export-keystore.sh.template > /etc/letsencrypt/renewal-hooks/deploy/export-keystore.sh
 chmod 755 /etc/letsencrypt/renewal-hooks/deploy/export-keystore.sh
